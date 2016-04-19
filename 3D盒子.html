@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+.box{width:302px;height:302px;position:relative;margin:100px auto;-webkit-transition:1s all ease;-webkit-transform-style:preserve-3d;-webkit-transform:perspective(800px) rotateX(0deg) rotate(0deg);
+}
+.box div{width:100%;height:100%;position:absolute;text-align:center;line-height:300px;opacity:0.8;}
+.box .front{-webkit-transform:translateZ(150px);background:red;}
+.box .back{-webkit-transform:translateZ(-150px);background:green;}
+.box .l{-webkit-transform:translate(-150px,0) rotateY(90deg);background:#03C;}
+.box .r{-webkit-transform:translate(150px,0) rotateY(-90deg);background:#90C;}
+.box .top{-webkit-transform:translate(0,-150px) rotateX(90deg);background:#F93;}
+.box .bottom{-webkit-transform:translate(0,150px) rotateX(-90deg);background:#303;}
+.box:active{-webkit-transform:perspective(800px) rotateX(-180deg) rotateY(180deg)}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<div class="front">正</div>
+    <div class="back">反</div>
+    <div class="l">左</div>
+    <div class="r">右</div>
+    <div class="top">上</div>
+    <div class="bottom">下</div>
+</div>
+</body>
+</html>

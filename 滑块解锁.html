@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+body{background:#CCC;}
+#box{width:400px;height:100px;margin:100px auto;background:gray;position:relative;font-size:50px;font-weight:bold;border-radius:50px;overflow:hidden;}
+@keyframes text{
+	from{background-position:-400px 0};
+	to{background-position:400px 0}
+}
+
+#box .div1,#box .mask{width:100%;height:100%;text-align:center;line-height:100px;position:absolute;}
+#box .mask{background:-webkit-linear-gradient(-30deg,rgba(102,102,102,0)   20%,#fff 30%,rgba(102,102,102,0) 40%);-webkit-mask:rgba(1,2,3,1);color:rgba(0,0,0,0);-webkit-background-clip:text;
+-webkit-animation-name:text;
+-webkit-animation-duration:3s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-timing-function:linear;
+}
+
+</style>
+</head>
+
+<body>
+<div id="box">
+	<div class="div1">滑动屏幕解锁</div>
+    <div class="mask">滑动屏幕解锁</div>
+</div>
+</body>
+</html>
